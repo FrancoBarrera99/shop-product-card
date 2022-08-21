@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 800px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 30px;
+    padding: 50px;
+    overflow: hidden;
+    width: 400px;
+    box-shadow: 0 10px 10px lightgrey;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 15px 0;
+}
+
+.rectangle {
+    background-color: aqua;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    border-radius: 30px;
+    background: rgb(0,152,173);
+    background: linear-gradient(
+        to right,
+        rgba(245, 70, 66, 1),
+        rgba(8, 83, 156, 1)
+    );
+}
+
+.wrapper img {
+    width: 275px;
+    z-index: 1;
+}
+
+.texts {
+    margin: 40px 0 20px 0;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.color_btn {
+    border: none;
+    border-radius: 30px;
+    padding: 5px 15px;
+    width: 75px;
+    margin: 0 5px;
+    box-shadow: 0 10px 10px lightgrey;
+    scale: 1;
+    transition: all 200ms ease-in-out;
+}
+
+.color_btn_selected {
+    border: none;
+    border-radius: 30px;
+    padding: 5px 15px;
+    width: 75px;
+    margin: 0 5px;
+    box-shadow: 0 10px 10px lightgrey;
+    color: white;
+    background: rgb(245, 70, 66);
+    scale: 1.2;
+    transition: all 200ms ease-in-out;
+}
+
+.purchase_btn{
+    padding: 10px;
+    width: 100%;
+    margin: 45px 0 20px 0;
+    border-radius: 30px;
+    border: none;
+    background: rgb(245, 70, 66);
+    color: whitesmoke;
+    font-weight: bold;
+    box-shadow: 0 10px 10px lightgrey, 0 0 50px lightgrey;
+}
