@@ -24,6 +24,7 @@ button {
 }
 
 .card {
+    transition: all 300ms ease-in;
     background: whitesmoke;
     padding: 20px;
     border-radius: 30px;
