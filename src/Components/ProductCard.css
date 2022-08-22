@@ -24,11 +24,6 @@ button {
 }
 
 .card {
-    transition: all ease-in;
-    transition-duration: 300ms;
-    -webkit-transition-duration: 300ms;
-    -moz-transition-duration: 300ms;
-    -o-transition-duration: 300ms;
     background: whitesmoke;
     padding: 20px;
     border-radius: 30px;

@@ -19,16 +19,16 @@ const ProductCard = () => {
   const container = document.querySelector('.container')
   const card = document.querySelector('.card')
 
+
   const texts = document.querySelector('.texts')
   const colors = document.querySelector('.colors')
   const purchase = document.querySelector('.purchase_btn')
   const watch = document.querySelector('.wrapper img')
 
-
   container?.addEventListener('mousemove', (e) => {
 
-    let xAxis = ( window.innerWidth / 2 - e.pageX ) / 25
-    let yAxis = ( window.innerHeight / 2 - e.pageY ) / 25
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 25
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 25
 
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
 
@@ -47,7 +47,7 @@ const ProductCard = () => {
 
   //Animate out
   container?.addEventListener('mouseleave', (e) => {
-    card.style.transition = null
+    card.style.transition = 'all 300ms ease-in'
     card.style.transform = null
 
     texts.style.transform = null
